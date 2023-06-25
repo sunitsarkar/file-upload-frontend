@@ -12,7 +12,7 @@ export default function Upload(){
 
     const [file,setFile]=useState(null);
 
-    const url='http://localhost:8000/upload'
+    const url='https://file-backend-sunit.onrender.com/upload'
     const submit=async (e)=>{
         // console.log(file)
         if(file.type=== "image/png" || "application/pdf"){

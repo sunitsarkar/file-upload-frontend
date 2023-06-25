@@ -6,7 +6,7 @@ export default function File(){
     const [data,setData]=useState([]);
 
     useEffect(()=>{
-        axios.get('http://localhost:8000/files').then((res)=>{
+        axios.get('https://file-backend-sunit.onrender.com/files').then((res)=>{
             setData(res.data)
             console.log(res.data)
         })

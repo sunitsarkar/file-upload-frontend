@@ -58,7 +58,7 @@ export default function RegistrationPage() {
       setErrors(errors);
     } else {
       // Perform registration logic here
-      axios.post('http://localhost:8000/register',{
+      axios.post('https://file-backend-sunit.onrender.com/register',{
           name:name,
           username:email,
           password:password
