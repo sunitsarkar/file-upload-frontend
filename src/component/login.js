@@ -33,7 +33,6 @@ const LoginPage = () => {
     if (Object.keys(errors).length > 0) {
       setErrors(errors);
     } else {
-      // Perform login logic here with username and password
       axios.post('https://file-backend-sunit.onrender.com/login',{
         username:username,
         password:password
